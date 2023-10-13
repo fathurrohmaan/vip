@@ -1,16 +1,15 @@
 #!/bin/bash
-# Edition : Stable Edition V3.0
-# Auther  : Geo Project
+# Edition : Stable Edition V1.5.0
 # (C) Copyright 2023
 # =========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-read -rp "Sub Domain (Contoh: Myrid112): " -e sub
-DOMAIN=ridwanvpn.games
-SUB_DOMAIN=${sub}.ridwanvpn.games
-CF_ID=ziexyuan@gmail.com
-CF_KEY=2fbf0739b65e1e4b6de396b11a9693fc6aa56
+read -rp "Sub Domain (Contoh: Joe11): " -e sub
+DOMAIN=joevvip.store
+SUB_DOMAIN=${sub}.joevvip.store
+CF_ID=selowae436@gmail.com
+CF_KEY=e869ac5bd43f65200bc107cd05a32db7b6715
 set -euo pipefail
 IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
