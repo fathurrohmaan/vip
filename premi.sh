@@ -728,10 +728,10 @@ print_success "Swap 1 G"
 function ins_Fail2ban(){
 clear
 print_install "Menginstall Fail2ban"
-apt -y install fail2ban > /dev/null 2>&1
+#apt -y install fail2ban > /dev/null 2>&1
 #sudo systemctl enable --now fail2ban
-/etc/init.d/fail2ban restart
-/etc/init.d/fail2ban status
+#/etc/init.d/fail2ban restart
+#/etc/init.d/fail2ban status
 
 # Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
@@ -859,7 +859,8 @@ cat >/etc/cron.d/xp_all <<-END
 	cat >/etc/cron.d/logclean <<-END
 		SHELL=/bin/sh
 		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-		*/20 * * * * root /usr/sbin/logclean
+		*/20 * * * * root /usr/local/sbin/clearlog
+		END
     chmod 644 /root/.profile
 	
     cat >/etc/cron.d/daily_reboot <<-END
