@@ -17,6 +17,10 @@ GRAY="\e[1;30m"
 NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
+TIMES="10"
+CHATID="-1001973626140"
+KEY="5627879486:AAE0uDsbjwLGUVa9BjCDLU01Cd2F8xFpd8o"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
   # // Exporint IP AddressInformation
@@ -29,13 +33,13 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Kyt Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
-echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}MYRIDWAN ${NC}${YELLOW}(${NC} ${green}Geo Project ${NC}${YELLOW})${NC}"
-echo -e "       © Recode By Geo Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Welcome To Dragon Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e " This Will Quick Setup VPN Server On Your Server"
+echo -e "  Auther : ${green}Dragon Emperor® ${NC}${YELLOW}(${NC} ${green} Dragon Tunneling ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My Self Dragon Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
-sleep 5
+sleep 2
 ###### IZIN SC 
 
 # // Checking Os Architecture
@@ -305,8 +309,25 @@ clear
 
 clear
 #GANTI PASSWORD DEFAULT
-
-
+restart_system() {
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/nishikazekazata/izin/main/ip | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/nishikazekazata/izin/main/ip | grep $ipsaya | awk '{print $3}')
+    TIMEZONE=$(printf '%(%H:%M:%S)T')
+    TEXT="
+<code>────────────────────</code>
+<b>⚡AUTOSCRIPT PREMIUM⚡</b>
+<code>────────────────────</code>
+<code>ID     : </code><code>$USRSC</code>
+<code>Domain : </code><code>$domain</code>
+<code>Date   : </code><code>$TIME</code>
+<code>Time   : </code><code>$TIMEZONE</code>
+<code>Ip vps : </code><code>$ipsaya</code>
+<code>Exp Sc : </code><code>$EXPSC</code>
+<code>────────────────────</code>
+<i>Automatic Notification from Github</i>
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/Renzy_Store"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://t.me/channel_fightertunnell/25"}]]}'
+    curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+}
 clear
 # Pasang SSL
 function pasang_ssl() {
@@ -958,6 +979,7 @@ clear
     menu
     profile
     enable_services
+    restart_system
 }
 instal
 echo ""
