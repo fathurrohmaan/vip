@@ -31,6 +31,7 @@ fun_bar() {
 }
 res1() {
     wget https://raw.githubusercontent.com/arifkenza09/vip/main/limit/menu.zip
+    7z e -paskykenza123 menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
