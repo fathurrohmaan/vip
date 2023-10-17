@@ -15,8 +15,7 @@
 - Tambah Swap 1GiB
 - Pemasangan yang dinamis
 - Tuning profile pada server
-- Xray Core by [@Renzy_Store](https://github.com/askykenza)
-- Penambahan fail2ban
+
 - Auto block sebagian ads indo by default
 - Auto clear log per 3 menit
 - Auto deler expired
@@ -48,12 +47,3 @@
 - WEBSOCKET : ON
 - Always Use HTTPS : OFF
 - UNDER ATTACK MODE : OFF
-```
-### Auther
-```
-```
-@Renzy_Store :<a href="https://t.me/Renzy_Store" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-```
-```
-``
-```
