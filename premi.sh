@@ -19,7 +19,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 TIMES="10"
 CHATID="634597722"
-KEY="5627879486:AAE0uDsbjwLGUVa9BjCDLU01Cd2F8xFpd8o"
+KEY="6552731454:AAFcb-_TcW7Y9SjeGuZkNP-Z4xiLzIJHvHU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
